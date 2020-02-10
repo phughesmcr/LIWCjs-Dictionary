@@ -1,4 +1,4 @@
-# LIWCjs
+# LIWCjs Dictionary
 Parse and manipulate multiple LIWC dictionary files.
 
 ## Table of Contents
