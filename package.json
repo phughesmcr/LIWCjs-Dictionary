@@ -1,0 +1,55 @@
+{
+  "name": "liwcjs-dictionary",
+  "version": "0.1.0",
+  "description": "Parse and manipulate multiple LIWC dictionary files.",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "files": [
+    "build/src"
+  ],
+  "license": "CC-BY-NC-SA-3.0",
+  "keywords": [
+    "liwc",
+    "linguistic inquiry",
+    "word count",
+    "linguistics",
+    "language",
+    "text",
+    "sentiment",
+    "nlp",
+    "dictionary",
+    "dic"
+  ],
+  "author": {
+    "name": "Peter Hughes",
+    "email": "peter@phugh.es",
+    "url": "https://www.phugh.es"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "homepage": "https://github.com/phugh/LIWCjs-Dictionary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phugh/LIWCjs-Dictionary"
+  },
+  "bugs": {
+    "url": "https://github.com/phugh/LIWCjs-Dictionary/issues"
+  },
+  "scripts": {
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check",
+    "builddocs": "typedoc --out docs src"
+  },
+  "devDependencies": {
+    "@types/node": "10.17.14",
+    "gts": "1.1.2",
+    "typedoc": "0.16.9",
+    "typescript": "3.7.5"
+  }
+}

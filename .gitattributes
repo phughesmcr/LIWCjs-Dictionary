@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.map   binary
+/build/* linguist-vendored
+/docs/* linguist-vendored

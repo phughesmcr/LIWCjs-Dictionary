@@ -1,0 +1,30 @@
+import { Category } from './category';
+import { Value } from './value';
+import { CategoryObject, CategoryContainer, ValueContainer } from './interfaces';
+export declare class Dictionary {
+    private _id;
+    private _name;
+    private _categories;
+    private _values;
+    private _counts;
+    private _numberCategory;
+    private _init;
+    constructor(id: number, name: string);
+    get id(): number;
+    get name(): string;
+    set name(str: string);
+    get categories(): CategoryContainer;
+    get values(): ValueContainer;
+    get categoryCount(): number;
+    get valueCount(): number;
+    get numberCategory(): number | undefined;
+    getNumberCategory(): number | undefined;
+    parse(data: string): void;
+    isReady(): boolean;
+    addCategory(data: CategoryObject): void;
+    removeCategory(category: Category | number): void;
+    private _removeParentsAndChildren;
+    findValueIndex(value: string, locale?: string): number;
+    addValue(value: string, categories: number[]): void;
+    removeValue(value: Value | string): void;
+}

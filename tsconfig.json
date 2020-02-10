@@ -1,0 +1,27 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "outDir": "build",
+    "removeComments": false,
+    "rootDir": ".",
+    "target": "ES6",
+    "newLine": "lf",
+    "strict": true,
+  },
+  "typedocOptions": {
+    "mode": "modules",
+    "out": "docs"
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts",
+	],
+	"exclude": [
+		"node_modules",
+    "**/*.spec.ts",
+    "test"
+  ]
+}
