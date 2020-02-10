@@ -8,7 +8,7 @@
  * @name         LIWCjs-Dictionary
  * @file         index.ts
  * @description  Parse LIWC dictionary files
- * @version      0.0.1
+ * @version      0.1.0
  * @module       liwcjs-dictionary
  * @author       P. Hughes <peter@phugh.es> (https://www.phugh.es)
  * @copyright    2019 P. Hughes. All rights reserved.

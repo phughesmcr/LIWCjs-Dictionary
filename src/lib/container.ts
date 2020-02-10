@@ -60,11 +60,15 @@ export class DictionaryContainer {
    * @param data - value data
    * @param locale - unicode locale string
    */
-  async addValue(uid: string | number, data: { name: string; categories: number[] }, locale?: string): Promise<Dictionary> {
+  async addValue(
+    uid: string | number,
+    data: { name: string; categories: number[] },
+    locale?: string
+  ): Promise<Dictionary> {
     const index = await this.getDictionaryIndex(uid, locale);
     if (index === -1) throw new Error(`Unable to find "${uid}".`);
     this._dictionaries[index].addValue(data.name, data.categories);
-    return this._dictionaries[index]
+    return this._dictionaries[index];
   }
 
   //#endregion
@@ -189,7 +193,7 @@ export class DictionaryContainer {
     const index = await this.getDictionaryIndex(uid, locale);
     if (index === -1) throw new Error(`Unable to find "${uid}".`);
     this._dictionaries[index].removeCategory(cid);
-    return this._dictionaries[index]
+    return this._dictionaries[index];
   }
 
   /**
